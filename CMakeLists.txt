@@ -2,7 +2,7 @@
 # https://github.com/adafruit/Adafruit_BusIO
 # MIT License
 
-cmake_minimum_required(VERSION 3.5)
+idf_build_get_property(__hack_component_targets __COMPONENT_TARGETS)
 
 if("arduino" IN_LIST BUILD_COMPONENTS OR __hack_component_targets MATCHES "__idf_arduino")
     list(APPEND ADAFRUIT_BUSIO_REQUIRES
