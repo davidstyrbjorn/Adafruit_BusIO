@@ -20,6 +20,6 @@ endif()
 
 idf_component_register(SRCS "Adafruit_I2CDevice.cpp" "Adafruit_BusIO_Register.cpp" "Adafruit_SPIDevice.cpp" 
                        INCLUDE_DIRS "."
-                       REQUIRES arduino-esp32)
+                       PRIV_REQUIRES ${ADAFRUIT_BUSIO_REQUIRES})
 
 project(Adafruit_BusIO)
